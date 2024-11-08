@@ -30,29 +30,29 @@ Bienvenido
                                             <th scope="col">Carnet</th>
                                         </tr>
                                         <tr>
-                                            <td>Alvarado Escobar</td>
-                                            <td>Gerson Israel</td>
-                                            <td scope="row">AE17004</td>
+                                            <td>Arias Alfaro</td>
+                                            <td>Kevin Alejandro</td>
+                                            <td scope="row">AA20085</td>
                                         </tr>
                                         <tr>
-                                            <td>García Guevara</td>
-                                            <td>Álvaro Daniel</td>
-                                            <td scope="row">GG20013</td>
+                                            <td>Argueta Alvarado</td>
+                                            <td>Carlos Josué</td>
+                                            <td scope="row">AA20099</td>
                                         </tr>   
                                         <tr>
-                                            <td>Rafaelano Santos</td>
-                                            <td>Carlos Eduardo</td>
-                                            <td scope="row">RS20002</td>
+                                            <td>Méndez Menjívar</td>
+                                            <td>Fernando José</td>
+                                            <td scope="row">MM21085</td>
                                         </tr>
                                         <tr>
-                                            <td>Rogel Hernández</td>
-                                            <td>Kevin Anthony</td>
-                                            <td scope="row">RH20049</td>
+                                            <td>Ramirez Flores</td>
+                                            <td>Daniel Esaú</td>
+                                            <td scope="row">RR20102</td>
                                         </tr>
                                         <tr>
-                                            <td>Vásquez Rodríguez</td>
-                                            <td>Carlos Alonso</td>
-                                            <td scope="row">VR16021</td>
+                                            <td>Rivera López</td>
+                                            <td>Christian Adonay</td>
+                                            <td scope="row">RL18051</td>
                                         </tr>
                                     </table>
                                 </div>

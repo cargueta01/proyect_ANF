@@ -17,8 +17,8 @@ class CreatePeriodosTable extends Migration
             $table->id();
             $table->string('anio', 4);
             $table->foreignId('empresa_id')->constrained('empresas')->onDelete('cascade')->onUpdate('cascade');;
-            $table->decimal('gasto_financiero')->default(0);
-            $table->decimal('inversion_inicial')->default(0);
+            $table->decimal('gasto_financiero', 12, 2)->default(0);
+            $table->decimal('inversion_inicial', 12, 2)->default(0);
         });
     }
 

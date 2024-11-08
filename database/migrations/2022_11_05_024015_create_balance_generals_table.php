@@ -17,9 +17,9 @@ class CreateBalanceGeneralsTable extends Migration
             $table->id();
             $table->foreignId('periodo_id')->constrained('periodos')->onDelete('cascade')->onUpdate('cascade');;
             $table->foreignId('empresa_id')->constrained('empresas')->onDelete('cascade')->onUpdate('cascade');;
-            $table->decimal('activo');
-            $table->decimal('pasivo');
-            $table->decimal('patrimonio');
+            $table->decimal('activo' , 12, 2);
+            $table->decimal('pasivo' , 12, 2);
+            $table->decimal('patrimonio' , 12, 2);
         });
     }
 
