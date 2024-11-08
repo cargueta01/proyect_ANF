@@ -17,7 +17,7 @@ class CreateCuentaPeriodosTable extends Migration
             $table->id();
             $table->foreignId('periodo_id')->constrained('periodos')->onDelete('cascade')->onUpdate('cascade');;
             $table->foreignId('cuenta_id')->constrained('cuentas')->onDelete('cascade')->onUpdate('cascade');;
-            $table->decimal('total');
+            $table->decimal('total' , 12, 2);
         });
     }
 

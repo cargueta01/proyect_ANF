@@ -28,33 +28,33 @@ class SeederUser extends Seeder
 
         $usu = [
             [
-                'name' => 'Gerson Israel Alvarado Escobar',
-                'email' => 'gerson.alvarado@econoscope.com',
-                'password' => bcrypt('AE17004'),
+                'name' => 'Kevin Alejandro Arias Alfaro',
+                'email' => 'kevin.arias@econoscope.com',
+                'password' => bcrypt('AA20085'),
                 'empresa_id' => 1
             ],
             [
-                'name' => 'Álvaro Daniel García Guevara',
-                'email' => 'alvaro.garcia@econoscope.com',
-                'password' => bcrypt('GG20013'),
+                'name' => 'Carlos Josué Argueta Alvarado',
+                'email' => 'carlos.argueta@econoscope.com',
+                'password' => bcrypt('AA20099'),
                 'empresa_id' => 2
             ],
             [
-                'name' => 'Carlos Eduardo Rafaelano Santos',
-                'email' => 'carlos.rafaelano@econoscope.com',
-                'password' => bcrypt('RS20002'),
+                'name' => 'Fernando José Méndez Menjívar',
+                'email' => 'fernando.mendez@econoscope.com',
+                'password' => bcrypt('MM21085'),
                 'empresa_id' => 3
             ],
             [
-                'name' => 'Kevin Anthony Rogel Hernández',
-                'email' => 'kevin.rogel@econoscope.com',
-                'password' => bcrypt('RH20049'),
+                'name' => 'Daniel Esaú Ramirez Flores',
+                'email' => 'daniel.ramires@econoscope.com',
+                'password' => bcrypt('RR20102'),
                 'empresa_id' => 4
             ],
             [
-                'name' => 'Carlos Alonso Vásquez Rodríguez',
-                'email' => 'carlos.vasquez@econoscope.com',
-                'password' => bcrypt('VR16021'),
+                'name' => 'Christian Adonay Rivera López',
+                'email' => 'christian.rivera@econoscope.com',
+                'password' => bcrypt('RL18051'),
                 'empresa_id' => 5
             ],
         ];
