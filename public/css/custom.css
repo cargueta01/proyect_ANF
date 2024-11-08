@@ -1,0 +1,28 @@
+.tag {
+    display: inline-block;
+}
+
+.index-botones{
+    display: flex;
+    column-gap: 1rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+}
+
+.mg_abajo_5{
+    margin-bottom: .5rem;
+}
+
+.mg_abajo_15{
+    margin-bottom: 1.5rem;
+}
+
+.alerta{
+    width: 100%;
+}

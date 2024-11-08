@@ -10,7 +10,7 @@ class AuthServiceProvider extends ServiceProvider
     /**
      * The policy mappings for the application.
      *
-     * @var array
+     * @var array<class-string, class-string>
      */
     protected $policies = [
         // 'App\Models\Model' => 'App\Policies\ModelPolicy',
@@ -25,6 +25,8 @@ class AuthServiceProvider extends ServiceProvider
     {
         $this->registerPolicies();
 
-        //
+        Gate::before(function($user,$ability){
+            return $user->email == 'admin@admin.com';
+        });
     }
 }
