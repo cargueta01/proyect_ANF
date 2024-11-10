@@ -39,7 +39,7 @@ class EstadoResultadoController extends Controller
 
         $ventas_netas = $estado_resultado->ventas - $estado_resultado->devolucion_sobre_ventas;
 
-        $utilidad_bruta = $ventas_netas - $estado_resultado->costo_de_ventas;
+        $utilidad_bruta = $ventas_netas - $estado_resultado->costo_de_ventas - $estado_resultado->impuestos_sobre_la_renta;
 
         $utilidad_operativa = $utilidad_bruta - $estado_resultado->gastos_de_operacion;
 
