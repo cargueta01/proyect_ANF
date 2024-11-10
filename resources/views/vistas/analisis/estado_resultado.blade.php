@@ -25,7 +25,7 @@ Estado de resultado
                             @if($estado_resultado == null)
                                 <div class="row mg_abajo_5">
                                     <div class="col-xs-6 col-sm-6 col-md-6">
-                                        (+) Ventas
+                                        (+) Servicios regulados
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-6">
                                         {!! Form::number('ventas', null, [
@@ -38,7 +38,7 @@ Estado de resultado
 
                                 <div class="row mg_abajo_5">
                                     <div class="col-xs-6 col-sm-6 col-md-6">
-                                        (-) Devolucion sobre ventas
+                                        (-) Rebajas y devoluciones
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-6">
                                         {!! Form::number('devolucion_sobre_ventas', null, [
@@ -51,7 +51,7 @@ Estado de resultado
 
                                 <div class="row mg_abajo_5">
                                     <div class="col-xs-6 col-sm-6 col-md-6">
-                                        (=) Ventas netas
+                                        (=) Ingresos operacionales
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-6">
                                         {!! Form::number('', null, [
@@ -62,10 +62,22 @@ Estado de resultado
                                         ]) !!}
                                     </div>
                                 </div>
+                                <div class="row mg_abajo_5">
+                                    <div class="col-xs-6 col-sm-6 col-md-6">
+                                        (-) Costo de servicio
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-6">
+                                        {!! Form::number('impuestos_sobre_la_renta', $estado_resultado->impuestos_sobre_la_renta, [
+                                            'class' => 'form-control',
+                                            'min' => '0',
+                                            'step' => '0.01'
+                                        ]) !!}
+                                    </div>
+                                </div>
 
                                 <div class="row mg_abajo_5">
                                     <div class="col-xs-6 col-sm-6 col-md-6">
-                                        (-) Costos de ventas
+                                        (-) Costos de servicios hospitalarios
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-6">
                                         {!! Form::number('costo_de_ventas', null, [
@@ -78,7 +90,7 @@ Estado de resultado
 
                                 <div class="row mg_abajo_5">
                                     <div class="col-xs-6 col-sm-6 col-md-6">
-                                        (=) Utilidad bruta
+                                        (=) Utilidad/perdida bruta
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-6">
                                         {!! Form::number('', null, [
@@ -92,7 +104,7 @@ Estado de resultado
 
                                 <div class="row mg_abajo_5">
                                     <div class="col-xs-6 col-sm-6 col-md-6">
-                                        (-) Gastos de operacion
+                                        (-) Gastos de administracion
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-6">
                                         {!! Form::number('gastos_de_operacion', null, [
@@ -105,7 +117,7 @@ Estado de resultado
 
                                 <div class="row mg_abajo_5">
                                     <div class="col-xs-6 col-sm-6 col-md-6">
-                                        (=) Utilidad operativa
+                                        (=) Ganancia/perdida de operacion
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-6">
                                         {!! Form::number('', null, [
@@ -119,7 +131,7 @@ Estado de resultado
 
                                 <div class="row mg_abajo_5">
                                     <div class="col-xs-6 col-sm-6 col-md-6">
-                                        (+) Otros ingresos
+                                        (+) Ingresos no operacionales
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-6">
                                         {!! Form::number('otros_ingresos', null, [
@@ -132,7 +144,7 @@ Estado de resultado
                                 
                                 <div class="row mg_abajo_5">
                                     <div class="col-xs-6 col-sm-6 col-md-6">
-                                        (-) Gastos no operativos
+                                        (-) Gastos no operacionales
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-6">
                                         {!! Form::number('gastos_no_operativos', null, [
@@ -157,7 +169,7 @@ Estado de resultado
                                     </div>
                                 </div>
 
-                                <div class="row mg_abajo_5">
+                                <!--<div class="row mg_abajo_5">
                                     <div class="col-xs-6 col-sm-6 col-md-6">
                                         (-) Impuestos sobre la renta
                                     </div>
@@ -183,14 +195,14 @@ Estado de resultado
                                             'disabled' => 'true'
                                         ]) !!}
                                     </div>
-                                </div>
+                                </div>-->
                                 {!! Form::hidden('periodo_id', $periodo_id, []) !!}
 
                             {{-- ! Bandera --}}
                             @else
                                 <div class="row mg_abajo_5">
                                     <div class="col-xs-6 col-sm-6 col-md-6">
-                                        (+) Ventas
+                                        (+) Servicios regulados
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-6">
                                         {!! Form::number('ventas', $estado_resultado->ventas, [
@@ -203,7 +215,7 @@ Estado de resultado
 
                                 <div class="row mg_abajo_5">
                                     <div class="col-xs-6 col-sm-6 col-md-6">
-                                        (-) Devolucion sobre ventas
+                                        (-) Rebajas y devoluciones
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-6">
                                         {!! Form::number('devolucion_sobre_ventas', $estado_resultado->devolucion_sobre_ventas, [
@@ -216,7 +228,7 @@ Estado de resultado
 
                                 <div class="row mg_abajo_5">
                                     <div class="col-xs-6 col-sm-6 col-md-6">
-                                        (=) Ventas netas
+                                        (=) Ingresos operacionales
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-6">
                                         {!! Form::number('', $ventas_netas, [
@@ -227,10 +239,22 @@ Estado de resultado
                                         ]) !!}
                                     </div>
                                 </div>
+                                <div class="row mg_abajo_5">
+                                    <div class="col-xs-6 col-sm-6 col-md-6">
+                                        (-) Costo de servicio
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-6">
+                                        {!! Form::number('impuestos_sobre_la_renta', $estado_resultado->impuestos_sobre_la_renta, [
+                                            'class' => 'form-control',
+                                            'min' => '0',
+                                            'step' => '0.01'
+                                        ]) !!}
+                                    </div>
+                                </div>
 
                                 <div class="row mg_abajo_5">
                                     <div class="col-xs-6 col-sm-6 col-md-6">
-                                        (-) Costos de ventas
+                                        (-) Costos de servicios hospitalarios
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-6">
                                         {!! Form::number('costo_de_ventas', $estado_resultado->costo_de_ventas, [
@@ -243,7 +267,7 @@ Estado de resultado
 
                                 <div class="row mg_abajo_5">
                                     <div class="col-xs-6 col-sm-6 col-md-6">
-                                        (=) Utilidad bruta
+                                        (=) Utilidad/perdida bruta
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-6">
                                         {!! Form::number('', $utilidad_bruta, [
@@ -257,7 +281,7 @@ Estado de resultado
 
                                 <div class="row mg_abajo_5">
                                     <div class="col-xs-6 col-sm-6 col-md-6">
-                                        (-) Gastos de operacion
+                                        (-) Gastos de administracion
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-6">
                                         {!! Form::number('gastos_de_operacion', $estado_resultado->gastos_de_operacion, [
@@ -270,7 +294,7 @@ Estado de resultado
 
                                 <div class="row mg_abajo_5">
                                     <div class="col-xs-6 col-sm-6 col-md-6">
-                                        (=) Utilidad operativa
+                                        (=) Ganancia/perdida de operacion
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-6">
                                         {!! Form::number('', $utilidad_operativa, [
@@ -284,7 +308,7 @@ Estado de resultado
 
                                 <div class="row mg_abajo_5">
                                     <div class="col-xs-6 col-sm-6 col-md-6">
-                                        (+) Otros ingresos
+                                        (+) Ingresos no operacionales
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-6">
                                         {!! Form::number('otros_ingresos', $estado_resultado->otros_ingresos, [
@@ -297,7 +321,7 @@ Estado de resultado
                                 
                                 <div class="row mg_abajo_5">
                                     <div class="col-xs-6 col-sm-6 col-md-6">
-                                        (-) Gastos no operativos
+                                        (-) Gastos no operacionales
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-6">
                                         {!! Form::number('gastos_no_operativos', $estado_resultado->gastos_no_operativos, [
@@ -322,21 +346,10 @@ Estado de resultado
                                     </div>
                                 </div>
 
-                                <div class="row mg_abajo_5">
-                                    <div class="col-xs-6 col-sm-6 col-md-6">
-                                        (-) Impuestos sobre la renta
-                                    </div>
-                                    <div class="col-xs-6 col-sm-6 col-md-6">
-                                        {!! Form::number('impuestos_sobre_la_renta', $estado_resultado->impuestos_sobre_la_renta, [
-                                            'class' => 'form-control',
-                                            'min' => '0',
-                                            'step' => '0.01'
-                                        ]) !!}
-                                    </div>
-                                </div>
+                                
                                 
                                                             
-                                <div class="row mg_abajo_5">
+                                <!--<div class="row mg_abajo_5">
                                     <div class="col-xs-6 col-sm-6 col-md-6">
                                         (=) Utilidad neta
                                     </div>
@@ -348,7 +361,7 @@ Estado de resultado
                                             'disabled' => 'true'
                                         ]) !!}
                                     </div>
-                                </div>
+                                </div>-->
                                 {!! Form::hidden('periodo_id', $estado_resultado->periodo_id, []) !!}
                             @endif
                             {!! Form::submit('Guardar', [
