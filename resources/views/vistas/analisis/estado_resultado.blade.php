@@ -64,10 +64,10 @@ Estado de resultado
                                 </div>
                                 <div class="row mg_abajo_5">
                                     <div class="col-xs-6 col-sm-6 col-md-6">
-                                        (-) Costo de servicio
+                                        (-) Costos de servicios
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-6">
-                                        {!! Form::number('impuestos_sobre_la_renta', $estado_resultado->impuestos_sobre_la_renta, [
+                                        {!! Form::number('impuestos_sobre_la_renta', null, [
                                             'class' => 'form-control',
                                             'min' => '0',
                                             'step' => '0.01'

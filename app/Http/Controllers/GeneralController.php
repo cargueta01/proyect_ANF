@@ -50,7 +50,6 @@ class GeneralController extends Controller
             else{
                 $unidor['cuenta1'] = 0;
             }
-
             if($cuenta2 != null){
                 if($cuenta2->count() > 0){
                     $unidor['cuenta2'] = $cuenta2->total;
@@ -62,15 +61,25 @@ class GeneralController extends Controller
             else{
                 $unidor['cuenta2'] = 0; 
             }
-
-
-            $unidor['absoluta'] = $unidor['cuenta2'] - $unidor['cuenta1'];
+            /*$unidor['absoluta'] = $unidor['cuenta2'] - $unidor['cuenta1'];
             if($cuenta2 == null){
                 $unidor['relativa'] = 'N/A';
             }
             else if($cuenta2->count() > 0){
                 $unidor['relativa'] = ( ( $unidor['cuenta2'] / $unidor['cuenta1'] ) - 1 ) * 100;
+            } else {
+                $unidor['relativa'] = 'N/A'; // Valor alternativo en caso de división por cero
+            }*/
+            $unidor['absoluta'] = $unidor['cuenta2'] - $unidor['cuenta1'];
+
+            if ($cuenta2 == null) {
+                $unidor['relativa'] = 'N/A';
+            } elseif ($unidor['cuenta1'] != 0) { // Verificación directa de cuenta1
+                $unidor['relativa'] = (( $unidor['cuenta2'] / $unidor['cuenta1'] ) - 1 ) * 100;
+            } else {
+                $unidor['relativa'] = 'N/A'; // Valor alternativo en caso de división por cero
             }
+
 
             array_push($cuenta_supreme, $unidor);
         }
