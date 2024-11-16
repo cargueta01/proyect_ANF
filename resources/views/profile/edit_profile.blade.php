@@ -1,7 +1,7 @@
 <div id="EditProfileModal" class="modal fade" role="dialog">
     <div class="modal-dialog modal-lg">
         <!-- Modal content-->
-        <div class="modal-content">
+        <div class="modal-content" style="background-color:#354656">
             <div class="modal-header">
                 <h5 class="modal-title">Edit Profile</h5>
                 <button type="button" aria-label="Close" class="close outline-none" data-dismiss="modal">×</button>
@@ -34,7 +34,7 @@
                             <div class="col-sm-3 preview-image-video-container float-right mt-1">
                                 <img id='edit_preview_photo'
                                      class="img-thumbnail user-img user-profile-img profilePicture"
-                                     src="{{asset('img/logo.png')}}"/>
+                                     src="{{asset('img/logo4.png')}}"/>
                             </div>
                         </div>
                     </div>

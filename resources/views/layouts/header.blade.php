@@ -74,12 +74,11 @@
                     Hola, {{\Illuminate\Support\Facades\Auth::user()->name}}</div>
             </a>
 
-            <div class="dropdown-menu dropdown-menu-right">
-                <div class="dropdown-title">
-                    Bienvenido, {{\Illuminate\Support\Facades\Auth::user()->name}}</div>
-                <a class="dropdown-item has-icon edit-profile" href="#" data-id="{{ \Auth::id() }}">
+            <div class="dropdown-menu dropdown-menu-right" style="background-color:#354656">
+                <div class="dropdown-title" >Bienvenido, {{\Illuminate\Support\Facades\Auth::user()->name}}</div>
+                <a class="dropdown-item has-icon edit-profile"style="color:white" href="#" data-id="{{ \Auth::id() }}">
                     <i class="fa fa-user"></i>Editar perfil</a>
-                <a class="dropdown-item has-icon" data-toggle="modal" data-target="#changePasswordModal" href="#" data-id="{{ \Auth::id() }}"><i
+                <a class="dropdown-item has-icon" data-toggle="modal" data-target="#changePasswordModal" href="#" data-id="{{ \Auth::id() }}" style="color:white"><i
                             class="fa fa-lock"> </i>Cambiar contraseña</a>
                 <a href="{{ url('logout') }}" class="dropdown-item has-icon text-danger"
                    onclick="event.preventDefault(); localStorage.clear();  document.getElementById('logout-form').submit();">

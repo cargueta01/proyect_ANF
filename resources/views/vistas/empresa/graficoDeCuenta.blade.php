@@ -8,19 +8,22 @@ Gráficos de cuentas
 
     <section class="section">
         <div class="section-header" style="display:grid;grid-template-columns: repeat(3, 1fr);text-align:center;padding:5px 10px;">
-            <div style="padding: 0px 0px 10px 10px">
-                <a class="dropdown-item has-icon" href="{{ route('catalogo.index') }}" style="padding: 5px 10px;border-radius:10px">
-                    <h4 class="page__heading" style="margin: 0px 0px 0px 0px;">Catalogo de cuentas</h4>
+        <div style="padding: 0px 0px 10px 10px">
+                <a href="{{ route('catalogo.index') }}" class="ag-courses-item_link"style=" border-radius: 28px;">
+                    <div class="ag-courses-item_bg"></div>
+                    <div class="ag-courses-item_title">Catalogo de cuentas</div>
                 </a>
             </div>
-            <div style="padding: 0px 0px 10px 10px">
-                <a class="dropdown-item has-icon" href=" {{route('vinculacion.index')}}" style="padding: 5px 10px;border-radius: 10px">
-                    <h4 class="page__heading" style="margin: 0px 0px 0px 0px">Relacionar cuentas</h4>
+            <div style="padding: 0px 0px 10px 10px">                
+                <a href="{{route('vinculacion.index')}}" class="ag-courses-item_link"style=" border-radius: 28px;">
+                    <div class="ag-courses-item_bg"></div>
+                    <div class="ag-courses-item_title">Relacionar cuentas</div>
                 </a>
             </div>
-            <div style="padding: 0px 0px 10px 10px">
-                <a class="dropdown-item has-icon" href="{{ route('graficos.index') }}" style="padding: 5px 10px;border-radius: 10px;background-color:#040525;color:#ffffff">
-                    <h4 class="page__heading" style="margin: 0px 0px 0px 0px">Gráficas</h4>
+            <div style="padding: 0px 0px 10px 10px">                
+                <a href="{{ route('graficos.index') }}" class="ag-courses-item_link"style=" background-color:#212e37;border-radius: 28px;">
+                    <div class="ag-courses-item_bg"></div>
+                    <div class="ag-courses-item_title">Gráficas</div>
                 </a>
             </div>
         </div>

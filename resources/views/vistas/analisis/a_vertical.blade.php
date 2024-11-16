@@ -7,16 +7,18 @@ Análisis vertical
 @section('content')
     <section class="section">
         <div class="section-header" style="display:grid;grid-template-columns: repeat(2, 1fr);text-align:center;padding:5px 10px;">
-            <div style="padding: 0px 0px 10px 10px">
-                <a class="dropdown-item has-icon" href=" {{route('horizontal.index')}}" style="padding: 5px 10px;border-radius: 10px">
-                    <h4 class="page__heading" style="margin: 0px 0px 0px 0px">Análisis horizontal</h4>
-                </a>
-            </div>
-            <div style="padding: 0px 0px 10px 10px">
-                <a class="dropdown-item has-icon" href="{{ route('vertical.index') }}" style="padding: 5px 10px;background-color:#040525;color:#ffffff;border-radius: 10px">
-                    <h4 class="page__heading" style="margin: 0px 0px 0px 0px;">Análisis vertical</h4>
-                </a>
-            </div>
+            <div style="padding: 0px 0px 10px 10px">            
+                    <a href="{{ route('horizontal.index') }}" class="ag-courses-item_link"style=" border-radius: 28px;">
+                        <div class="ag-courses-item_bg"></div>
+                        <div class="ag-courses-item_title">Análisis horizontal</div>
+                    </a>
+                </div>
+                <div style="padding: 0px 0px 10px 10px">                
+                    <a href="{{route('vertical.index')}}" class="ag-courses-item_link"style="background-color:#212e37;border-radius: 28px;">
+                        <div class="ag-courses-item_bg"></div>
+                        <div class="ag-courses-item_title">Análisis vertical</div>
+                    </a>
+                </div>
         </div>
         <div class="section-body">
             <div class="row">
@@ -34,7 +36,7 @@ Análisis vertical
                                         <th>Variacion {{$periodo2}}</th>
                                     </thead>
                                     <tbody>
-                                        <tr class="table-secondary">
+                                        <tr class="table-secondary" style="color: black;font-weight: bold;">
                                             <td>Activos</td><td></td><td></td><td></td><td></td>
                                         </tr>
                                         @foreach ($cuenta_supreme as $cuenta)
@@ -49,7 +51,7 @@ Análisis vertical
                                             @endif
                                         @endforeach
     
-                                        <tr class="table-info">
+                                        <tr class="table-info" style="color: black;font-weight: bold;">
                                             <td>Total Activo</td>
                                             <td>{{$totales['activo1']}}</td>
                                             <td>{{$totales['activo2']}}</td>
@@ -58,7 +60,7 @@ Análisis vertical
                                         </tr>
     
                                         <tr><td></td></tr>
-                                        <tr class="table-secondary">
+                                        <tr class="table-secondary" style="color: black;font-weight: bold;">
                                             <td>Pasivos</td><td></td><td></td><td></td><td></td>
                                         </tr>
                                         @foreach ($cuenta_supreme as $cuenta)
@@ -73,7 +75,7 @@ Análisis vertical
                                         @endif
                                         @endforeach
                                         
-                                        <tr class="table-info">
+                                        <tr class="table-info" style="color: black;font-weight: bold;">
                                             <td>Total Pasivo</td>
                                             <td>{{$totales['pasivo1']}}</td>
                                             <td>{{$totales['pasivo2']}}</td>
@@ -83,7 +85,7 @@ Análisis vertical
     
     
                                         <tr><td></td></tr>
-                                        <tr class="table-secondary">
+                                        <tr class="table-secondary" style="color: black;font-weight: bold;">
                                             <td>Patrimonio</td><td></td><td></td><td></td><td></td>
                                         </tr>
                                         @foreach ($cuenta_supreme as $cuenta)
@@ -98,7 +100,7 @@ Análisis vertical
                                             @endif
                                         @endforeach
     
-                                        <tr class="table-info">
+                                        <tr class="table-info" style="color: black;font-weight: bold;">
                                             <td>Total Patrimonio</td>
                                             <td>{{$totales['patrimonio1']}}</td>
                                             <td>{{$totales['patrimonio2']}}</td>

@@ -17,7 +17,7 @@ Bienvenido
                             <center><b><h4>EconoScope</h4></b></center>
                             <center><b><h5>Un vistazo a tu economia</h5></b></center>
                             <br>
-                            <center><img src="{{ asset('img/logo.png') }}" alt="logo" width="100" class="shadow-light"></center>
+                            <center><img src="{{ asset('img/logo4.png') }}" alt="logo" width="100" class="shadow-light"></center>
                             <br>
                             <center><h6>Integrantes</h6></center>
                             <br>
