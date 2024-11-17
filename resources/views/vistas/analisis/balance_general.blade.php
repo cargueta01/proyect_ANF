@@ -46,7 +46,6 @@ Crear balance general
                                         <div class="col-xs-3 col-sm-3 col-md-3">
                                             {!! Form::number('total', null, [
                                                 'class' => 'form-control',
-                                                'min' => '0',
                                                 'step'=>'0.01',
                                                 'class' => 'econoscope_balance form-control',
                                                 'id' => null,
@@ -75,8 +74,7 @@ Crear balance general
                                             </div>
                                             <div class="col-xs-3 col-sm-3 col-md-3">
                                                 {!! Form::number('total', $cuentap->total, [
-                                                    'class' => 'form-control',
-                                                    'min' => '0',
+                                                    'class' => 'form-control',                                                  
                                                     'step'=>'0.01',
                                                     'class' => 'econoscope_balance form-control',
                                                     'id' => $cuentap->id,
@@ -122,7 +120,6 @@ Crear balance general
                                         <div class="col-xs-3 col-sm-3 col-md-3">
                                             {!! Form::number('total', null, [
                                                 'class' => 'form-control',
-                                                'min' => '0',
                                                 'step'=>'0.01',
                                                 'class' => 'econoscope_balance form-control',
                                                 'id' => null,
@@ -152,7 +149,6 @@ Crear balance general
                                             <div class="col-xs-3 col-sm-3 col-md-3">
                                                 {!! Form::number('total', $cuentap->total, [
                                                     'class' => 'form-control',
-                                                    'min' => '0',
                                                     'step'=>'0.01',
                                                     'class' => 'econoscope_balance form-control',
                                                     'id' => $cuentap->id,
@@ -197,7 +193,6 @@ Crear balance general
                                         <div class="col-xs-3 col-sm-3 col-md-3">
                                             {!! Form::number('total', null, [
                                                 'class' => 'form-control',
-                                                'min' => '0',
                                                 'step'=>'0.01',
                                                 'class' => 'econoscope_balance form-control',
                                                 'id' => null,
@@ -227,7 +222,6 @@ Crear balance general
                                             <div class="col-xs-3 col-sm-3 col-md-3">
                                                 {!! Form::number('total', $cuentap->total, [
                                                     'class' => 'form-control',
-                                                    'min' => '0',
                                                     'step'=>'0.01',
                                                     'class' => 'econoscope_balance form-control',
                                                     'id' => $cuentap->id,
@@ -311,7 +305,6 @@ Crear balance general
     <label for="total">{{$cuenta->nombre}}</label>
     {!! Form::number('total', null, [
         'class' => 'form-control',
-        'min' => '0',
         ]) !!}
     {!! Form::submit('Registrar', [
         'class'=>'btn btn-success'

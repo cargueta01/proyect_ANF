@@ -47,7 +47,10 @@ class EstadoResultadoController extends Controller
 
         $utilidad_neta = $utilidad_antes_de_impuesto - $estado_resultado->impuestos_sobre_la_renta;
 
+
         return view('vistas.analisis.estado_resultado', compact('estado_resultado', 'ventas_netas', 'utilidad_bruta', 'utilidad_operativa', 'utilidad_antes_de_impuesto', 'utilidad_neta'));
+        
+
     }
 
     /**
