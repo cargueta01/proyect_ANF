@@ -64,13 +64,13 @@ class BalanceGeneralController extends Controller
         $patrimonio = 0;
 
         foreach($cuenta_p as $cuenta){
-            if($cuenta->cuenta->tipo == 0){
+            if($cuenta->cuenta->tipo == 0 && $cuenta->cuenta->codigo != 2 && $cuenta->cuenta->codigo != 2.1 ){
                 $deudora += $cuenta->total;
             }
-            else if($cuenta->cuenta->tipo == 1){
+            else if($cuenta->cuenta->tipo == 1 && $cuenta->cuenta->codigo != 1 && $cuenta->cuenta->codigo != 1.1 ){
                 $acredora += $cuenta->total;
             }
-            else if($cuenta->cuenta->tipo == 2){
+            else if($cuenta->cuenta->tipo == 2 && $cuenta->cuenta->codigo != 3 ){
                 $patrimonio += $cuenta->total;
             }
         }
