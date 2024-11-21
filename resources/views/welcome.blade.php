@@ -14,7 +14,6 @@ Bienvenido
                 <div class="col-lg-12">
                     <div class="card">
                         <div class="card-body">
-                            <center><b><h4>EconoScope</h4></b></center>
                             <center><b><h5>Un vistazo a tu economia</h5></b></center>
                             <br>
                             <center><img src="{{ asset('img/logo4.png') }}" alt="logo" width="100" class="shadow-light"></center>
