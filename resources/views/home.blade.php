@@ -15,7 +15,7 @@ Inicio
                     <div class="card">
                         <div class="card-body">
                             {{-- <h3 class="text-center">Dashboard Content</h3> --}}
-                            <p>EconoScope tiene por objetivo emitir informes de análisis financieros de empresa. Este sistema podrá emitir informes de:</p>
+                            <p>Tenemos por objetivo emitir informes de análisis financieros de empresa. Este sistema podrá emitir informes de:</p>
                             <ul>
                                 <li>Análisis horizontal</li>
                                 <li>Análisis vertical</li>
